@@ -10,4 +10,8 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	$('.mybutton').click(function(e) {
+		e.preventDefault();
+		ga("send", "event", 'like', 'click');
+	});
 }
